@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(data);
             data.forEach(async repo => {
 
-                if (!repo.name.includes(".github.io") && !repo.name.includes("(pre)")) {
+                if (!repo.name.includes(".github.io") && !repo.name.includes("pre")) {
                     delay += 0.1
                     console.log(delay, `--delay:${delay}s;`);
                     const url = `https://saleh-mobeen.github.io/${repo.name}/`
