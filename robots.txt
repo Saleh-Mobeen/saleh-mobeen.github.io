@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /*.js$
+Disallow: /*.json$
+Allow: /
+
+Sitemap: https://saleh-mobeen.github.io/sitemap.xml
+
