@@ -1,18 +1,22 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch("https://api.github.com/users/saleh-mobeen/repos")
+        // fetch("repo.json")
+
         .then(res => res.json())
         .then(data => {
+
             var delay = 0
             console.log(data);
             data.forEach(async repo => {
 
                 if (!repo.name.includes(".github.io") && !repo.name.includes("pre")) {
                     delay += 0.1
-                    console.log(delay, `--delay:${delay}s;`);
                     const url = `https://saleh-mobeen.github.io/${repo.name}/`
                     const project = document.createElement('div')
                     project.classList.add('project')
                     project.style = `--delay:${delay}s;`
+
 
 
                     const a = document.createElement('a')
