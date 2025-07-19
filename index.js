@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch("https://api.github.com/users/saleh-mobeen/repos")
-        // fetch("repo.json")
+    // fetch("repo.json")
 
         .then(res => res.json())
         .then(data => {
